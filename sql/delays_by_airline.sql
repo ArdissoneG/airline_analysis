@@ -1,0 +1,9 @@
+SELECT
+    a.AIRLINE,
+    AVG(f.ARRIVAL_DELAY) AS avg_delay
+FROM flights f
+JOIN airlines a
+    ON f.AIRLINE = a.IATA_CODE
+WHERE f.ARRIVAL_DELAY IS NOT NULL
+GROUP BY a.AIRLINE
+ORDER BY avg_delay DESC
