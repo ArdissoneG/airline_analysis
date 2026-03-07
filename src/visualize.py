@@ -13,8 +13,9 @@ def plot_delays_by_airline(df):
     plt.title("Average Arrival Delay by Airline")
     plt.xticks(rotation=45)
     plt.tight_layout()
+    plt.savefig("outputs/delays_by_airline.png")
     plt.show()
-
+    
 
 def plot_monthly_delay(df):
 
@@ -26,4 +27,5 @@ def plot_monthly_delay(df):
     plt.title("Monthly Delay Trend")
     plt.xticks(rotation=45)
     plt.tight_layout()
+    plt.savefig("outputs/monthly_delay.png")
     plt.show()
