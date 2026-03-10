@@ -138,3 +138,40 @@ def plot_delay_heatmap(df):
     plt.savefig("outputs/delay_heatmap.png")
 
     plt.show()
+
+
+# ===============================
+# Analysis Insights
+# ===============================
+
+# 1. Cancellation Rate by Airline
+# Some airlines show higher cancellation rates than others,
+# suggesting differences in operational reliability.
+
+# 2. Distribution of Arrival Delays
+# The delay distribution is right-skewed. Most flights experience
+# small delays, but extreme delays still occur occasionally.
+
+# 3. Average Delay Heatmap
+# Average delays vary across months and days of the week,
+# indicating potential seasonal or operational patterns.
+
+# 4. Airport Delay Geographic Distribution
+# Average delays are higher in the Eastern and Southern U.S. hubs,
+# indicating that regional air traffic density significantly impacts punctuality.
+
+
+# 5. Average Arrival Delay by Airline
+# Delays vary significantly by carrier, with low-cost airlines showing
+# the highest averages, while others maintain near-zero or even
+# negative delays, reflecting higher operational punctuality.
+
+# 6. Monthly Delay Trend
+# Average delays fluctuate significantly throughout the year, peaking
+# during the summer months (June) and winter holidays (December),
+# suggesting strong seasonal pressure on flight schedules.
+
+#7. Top Airports by Departure Delay
+# A small group of airports exhibits significantly higher average departure
+# delays than the national average, indicating localized operational bottlenecks
+# or specific regional challenges affecting these locations.
